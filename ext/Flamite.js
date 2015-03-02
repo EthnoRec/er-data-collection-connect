@@ -3,8 +3,7 @@
  */
 
 var Flamite = (function() {
-  var user = null;
-  var appUrl = 'http://flamite.local';
+  var appUrl = 'http://localhost:3000/';
 
   function openAppTab(tabId) {
     if (tabId) {
@@ -31,7 +30,6 @@ var Flamite = (function() {
 
     init: function() {
       // init
-      Flamite.Tinder.init();
       Flamite.Facebook.init();
 
       // listen Chrome event

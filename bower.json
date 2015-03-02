@@ -1,8 +1,9 @@
 {
-  "name": "Flamite",
-  "version": "2.1.5",
+  "name": "tinder-gather-connect",
+  "version": "1.0.0",
   "authors": [
-    "MrPing <amsellem.jonathan@gmail.com>"
+    "MrPing <amsellem.jonathan@gmail.com>",
+    "Lee Archer <la12808@my.bristol.ac.uk>"
   ],
   "license": "MIT",
   "private": true,

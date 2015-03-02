@@ -6,7 +6,7 @@ jQuery(function() {
 
   var message = document.createElement('div');
   message.classList.add('linterrex-message');
-  message.innerHTML = 'Connexion à Tinder en cours...';
+  message.innerHTML = 'Obtaining Facebook token ...';
   popin.appendChild(message);
 
   jQuery.ajax({

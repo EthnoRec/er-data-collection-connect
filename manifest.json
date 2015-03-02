@@ -1,14 +1,13 @@
 {
-  "name": "Flamite",
+  "name": "tinder-gather-connect",
   "version": "2.3.0",
   "manifest_version": 2,
-  "description": "Unofficial Tinder client.",
+  "description": "Tinder-Facebook connector based on Flamite",
   "permissions": [
     "storage", 
     "webRequest",
     "webRequestBlocking",
-    "https://api.gotinder.com/*",
-    "http://flamite.local/*"
+    "http://localhost:3000/*"
   ],
   "content_security_policy": "script-src 'self' https://api.gotinder.com 'unsafe-eval'; object-src 'self'",
   "browser_action": {
@@ -20,7 +19,6 @@
       "vendor/jquery.min.js", 
       "ext/Flamite.js", 
       "ext/Facebook.js", 
-      "ext/Tinder.js", 
       "ext/background.js"
     ]
   },
@@ -30,7 +28,7 @@
       "128": "icons/icon128.png"
   },
   "externally_connectable": {
-    "matches": ["http://flamite.local/*"]
+    "matches": ["http://localhost/*"]
   },
   "content_scripts": [
     {

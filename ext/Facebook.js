@@ -5,15 +5,9 @@
 Flamite.Facebook = (function(Flamite) {
 
   function facebookAuthSuccess(facebook_token, tabId) {
-    Flamite.Tinder.request('auth', 'POST', {
-      facebook_token: facebook_token
-    }, {
-      tabId: tabId
-    }).done(function(result) {
-      Flamite.Tinder.setUser(result.user);
-      Flamite.Tinder.setToken(result.token);
-      Flamite.openAppTab(tabId);
-    });
+      console.log("Facebook token:");
+      console.log(facebook_token);
+      // Send the token to the LOCAL node app
   }
 
   function openAuthTab(tabId) {
