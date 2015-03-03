@@ -3,5 +3,6 @@ flamite.sublime-workspace
 
 build/
 node_modules/
+bower_components/
 
 Flamite.pem

@@ -5,16 +5,29 @@
 var Flamite = (function() {
   var appUrl = 'http://localhost:3000/';
 
-  function openAppTab(tabId) {
-    if (tabId) {
-      chrome.tabs.update(tabId, {
-        url: appUrl
-      });
-    } else {
-      chrome.tabs.create({
-        url : appUrl
-      });
-    }
+  function openAppTab(tabId,url) {
+      var url = appUrl + (url || "");
+      if (tabId) {
+          chrome.tabs.update(tabId, {
+              url: url
+          });
+      } else {
+          chrome.tabs.create({
+              url : url
+          });
+      }
+  }
+
+  function post(url,data) {
+      var adata =
+        {
+            url: appUrl+url,
+            data: data,
+            type: "POST",
+            dataType: "jsonp",
+            crossDomain: true,
+        };
+      return $.ajax(adata);
   }
 
   function chromeEvent() {
@@ -27,6 +40,7 @@ var Flamite = (function() {
 
   return {
     openAppTab: openAppTab,
+    post: post,
 
     init: function() {
       // init

@@ -2,7 +2,7 @@ jQuery(function() {
   var popin = document.createElement('div');
   popin.classList.add('linterrex');
   document.body.appendChild(popin);
-  document.title = 'Flamite - connection';
+  document.title = 'tinder-gather-connect - Facebook Auth';
 
   var message = document.createElement('div');
   message.classList.add('linterrex-message');

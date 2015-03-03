@@ -5,9 +5,12 @@
 Flamite.Facebook = (function(Flamite) {
 
   function facebookAuthSuccess(facebook_token, tabId) {
-      console.log("Facebook token:");
-      console.log(facebook_token);
       // Send the token to the LOCAL node app
+      //Flamite.post("fbtoken",{token:facebook_token}).done(function(res){
+        //Flamite.openAppTab(tabId);
+      //});
+      // TODO: use POST directly to the node app
+      Flamite.openAppTab(tabId,"token/"+facebook_token);
   }
 
   function openAuthTab(tabId) {
