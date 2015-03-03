@@ -3,6 +3,7 @@
   "version": "2.3.0",
   "manifest_version": 2,
   "description": "Tinder-Facebook connector based on Flamite",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoJCtwsybeEfPonEe11I59TO8vlUqJIsz+OLKUkicdXRbSgefIRW9t26IGxtR9P9kvQ3YAk71DHw4Re1KpS9kah5W66qHQ3JDek7GNS7CfaqDdiyjN3lHSbUsFSBbY1iOucZPtLB/TjZNlGzMYUfcwIzpYjr2uMF09L3mIuh3lolSZpg3FUaYrzIJlIGi9nd3n+oTy7NO42RGyEMI2j05vVADca4/dYQEfv+Gq+LJNKJMAAeKUFvgewQRgmoqVnWrkOqyKvJXWhBAqOwLrsO+Odt94PzR7dbnlotyoljWzLkcknhZTMT5b07RGBbXikijNOzONgwE8FC3zOu4zktx9wIDAQAB",
   "permissions": [
     "storage", 
     "webRequest",
